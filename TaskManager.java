@@ -13,16 +13,16 @@ public class TaskManager {
     public void addTask(String title) {
         tasks.add(new Task(title));
         saveTasks();
-        System.out.println("✅ Task added successfully!");
+        System.out.println("Task added successfully!");
     }
 
     public void deleteTask(int index) {
         if (index >= 0 && index < tasks.size()) {
             tasks.remove(index);
             saveTasks();
-            System.out.println("🗑️ Task deleted successfully!");
+            System.out.println(" Task deleted successfully!");
         } else {
-            System.out.println("⚠️ Invalid task number.");
+            System.out.println(" Invalid task number.");
         }
     }
 
@@ -30,9 +30,9 @@ public class TaskManager {
         if (index >= 0 && index < tasks.size()) {
             tasks.get(index).markComplete();
             saveTasks();
-            System.out.println("🎯 Task marked as complete!");
+            System.out.println(" Task marked as complete!");
         } else {
-            System.out.println("⚠️ Invalid task number.");
+            System.out.println(" Invalid task number.");
         }
     }
 

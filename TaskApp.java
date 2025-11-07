@@ -40,10 +40,10 @@ public class TaskApp {
                 case 5 -> manager.listTasks("completed");
                 case 6 -> manager.listTasks("pending");
                 case 7 -> {
-                    System.out.println("👋 Exiting... Goodbye!");
+                    System.out.println("exiting!");
                     return;
                 }
-                default -> System.out.println("⚠️ Invalid choice!");
+                default -> System.out.println(" Invalid choice!");
             }
         }
     }
